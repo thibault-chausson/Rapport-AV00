@@ -1,0 +1,129 @@
+\documentclass{librairies/lib}
+\usepackage{glossaries}
+
+%%%%%%%%%%%%%VARIABLE EN TETE%%%%%%%%%%%
+\newcommand{\TITRE}{\today}
+\newcommand{\NOM}{CHAUSSON Thibault}
+\newcommand{\UVXX}{AV00}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\makeglossaries
+
+
+\newglossaryentry{ENSEEIHT}
+{
+    name=ENSEEIHT,
+    description={École Nationale Supérieure d'Électrotechnique, d'Électronique, d'Informatique, d'Hydraulique et des Télécommunications}
+}
+
+
+
+
+\begin{document}
+
+\include{pages/titlepage}
+
+
+%\maketitle
+\newpage
+\pagestyle{no_number}
+
+\section*{Préambule}
+\addcontentsline{toc}{section}{Préambule}
+
+J'ai la volonté d'écrire l'ensemble de se rapport en utilisant l'écriture inclusive et plus particulièrement le point médian\footnote{Unicode : U+00B7}.
+L'ensemble des règles appliquées sont issues du Manuel d’Écriture inclusive\cite{MEI} de Mots-Clés, s'appuyant sur les travaux de HOUDEBINE Anne-Marie\footnote{Professeure émérite de linguistique et sémiologie Université Paris Descartes – Sorbonne.}.
+Ceci permettant de ne plus utiliser le genre masculin comme genre neutre, ce qui exclue 50\% de la population.
+Ainsi selon le Manuel d’Écriture inclusive : \og Le point milieu permet d'affirmer sa fonction singulière d'un point de vue sémiotique et par là d'investir "frontalement" l'enjeu discursif et social de l'égalité femmes/hommes. \fg{}
+Je vois personnellement, ce rapport comme un laboratoire vivant, ce qui me permettra de statuer au mieux sur l'utilisation d'une écriture égalitaire et novatrice pour la rédaction de l'ensemble de mes écrit.
+
+
+\newpage
+
+
+\section*{Résumé}
+\addcontentsline{toc}{section}{Résumé}
+
+Dans le but de promouvoir de manière ludique l'engagement associatif, j'ai décidé de rejoutre l'UV AV00\footnote{Unité de valeur hors emploi du temps, ayant pour objectif de réaliser un projet audivisuel.} au cours de mon neuvième semestre d'étude supérieur à l'Université de Technologie de Belfort Montbéliard, pour réaliser un projet audivisuel.
+
+Ce cours documentaire sera esentiellement centré sur les activités estudiantines de l'UTBM, par le biais de la Junior UTBM, de l'AE UTBM et du BDS UTBM.
+Je me permets d'inclure le discours d'une étudiante de l'\gls{ENSEEIHT} qui est partie en Colombie pour un voyage humanitaire, qui est aussi Responsable Qualité de la Junior Entreprise N7 Consulting, et qui est membre active de Women7.
+
+\newpage
+
+
+
+\tableofcontents
+\newpage
+
+
+
+\pagestyle{number}
+
+\section{Présentation}\label{sec:presentation}
+
+\input{pages/presentation}
+
+\newpage
+
+\section{Cahier des charges}\label{sec:cahier-des-charges}
+
+\input{pages/cdc}
+
+\newpage
+
+\section{Réalisation}\label{sec:realisation}
+
+\input{pages/realisation}
+
+\newpage
+
+
+\section{Conclusion}\label{sec:conclusion}
+
+
+
+
+\newpage
+\pagenumbering{roman}
+
+
+\addcontentsline{toc}{section}{Glossaire}
+\printglossaries
+
+
+\newpage
+
+\section*{Annexes}
+\addcontentsline{toc}{section}{Annexes}
+\input{pages/annexes}
+
+
+%Formats de fichiers
+
+%Captures
+
+
+\newpage
+
+\listoffigures
+\addcontentsline{toc}{section}{Table des images}
+
+
+%\newpage
+
+%\listoftables
+%\addcontentsline{toc}{section}{Table des tableaux}
+
+
+\newpage
+
+%\nocite{*} %Pour tout cité, même si non appelé
+\bibliography{refs}
+\bibliographystyle{plain}
+\addcontentsline{toc}{section}{Références}
+
+
+\end{document}
