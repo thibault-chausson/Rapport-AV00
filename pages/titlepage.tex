@@ -13,7 +13,24 @@
             % Upper part of the page. The '~' is needed because \\
             % only works if a paragraph has started.
 
-            \includegraphics[scale=0.2]{ressources/logo}~\\[1cm]
+            % \includegraphics[scale=0.2]{ressources/logo}~\\[1cm]
+
+            \begin{figure}[htbp]
+                \centering
+                \begin{minipage}[c]{0.45\textwidth}
+                    \centering
+                    \includegraphics[width=\textwidth]{ressources/logo}
+                    \label{fig:image1}
+                \end{minipage}
+                \hfill
+                \begin{minipage}[c]{0.45\textwidth}
+                    \centering
+                    \includegraphics[width=\textwidth]{ressources/AE couleur}
+                    \label{fig:image2}
+                \end{minipage}
+            \end{figure}
+
+            \vspace{1cm}
 
             \textsc{\LARGE Université de technologie de Belfort-Montbéliard}\\[2cm]
 
