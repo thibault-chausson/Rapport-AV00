@@ -410,3 +410,4 @@
 
 
 \RequirePackage{emoji}
+% https://ctan.gutenberg-asso.fr/macros/luatex/latex/emoji/emoji-doc.pdf
