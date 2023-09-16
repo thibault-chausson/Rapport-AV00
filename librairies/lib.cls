@@ -407,3 +407,6 @@
 % en respectant la sémantique des caractères
 \newunicodechar{·}{\kern-.25em\textperiodcentered\kern-.25em}
 % sur mac option + shift + F
+
+
+\RequirePackage{emoji}
