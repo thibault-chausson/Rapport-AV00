@@ -411,3 +411,6 @@
 
 \RequirePackage{emoji}
 % https://ctan.gutenberg-asso.fr/macros/luatex/latex/emoji/emoji-doc.pdf
+
+\RequirePackage{xfrac}
+% Pour des fraction dans le texte
