@@ -273,7 +273,7 @@
 %le gloassaire
 \RequirePackage{glossaries}
 %Pour mettre en gras les termes du glossaire
-\renewcommand*{\glstextformat}{\textcolor{UTBMcolor}}
+%\renewcommand*{\glstextformat}{\textcolor{UTBMcolor}}
 
 
 
